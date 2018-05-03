@@ -7,4 +7,4 @@ CREATE TABLE `redirect` (
 	PRIMARY KEY (`slug`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Used for the URL shortener';
 
-INSERT INTO `redirect` VALUES ('a', 'https://github.com/mathiasbynens/php-url-shortener', NOW(), 1);
+INSERT INTO `redirect` VALUES ('a', 'https://github.com/hatzopoulos/php-url-shortener', NOW(), 1);
