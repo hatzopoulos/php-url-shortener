@@ -1,6 +1,11 @@
 <?php
 
 require 'config.php';
+// Script being called directly so force forbidden response.
+if (empty($_SERVER['REDIRECT_URL']) && str_replace(rtrim($_SERVER['DOCUMENT_ROOT'], '/'), '', __FILE__) === $_SERVER['SCRIPT_NAME']) {
+    header($_SERVER['SERVER_PROTOCOL'].' 403 Forbidden', true, 403);
+    die;
+}
 
 header('Content-Type: text/plain;charset=UTF-8');
 
