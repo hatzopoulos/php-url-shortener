@@ -6,6 +6,8 @@ if (empty($_SERVER['REDIRECT_URL']) && str_replace(rtrim($_SERVER['DOCUMENT_ROOT
     die;
 }
 
+ob_start();
+
 header('Content-Type: text/plain;charset=UTF-8');
 
 require_once __DIR__.'/config.php';
