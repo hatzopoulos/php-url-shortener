@@ -5,6 +5,7 @@ RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php
 RewriteRule ^index.php$ %{REQUEST_SCHEME}://%{HTTP_HOST}/ [R=301,L,QSA]
 
 RewriteRule ^shorten(.*)$ shorten.php?$1 [L,QSA]
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php?slug=$1 [L,QSA]

@@ -49,4 +49,3 @@ This script is available under the MIT license.
 
 * [Peter Beverloo](http://peter.sh/)
 * [Tomislav Biscan](https://github.com/B-Scan)
-
